@@ -1,0 +1,126 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    --grey:#313131;
+    --rajdhani: 'Rajdhani', sans-serif;
+
+}
+
+body{
+    background-color:rgb(255, 255, 255);
+}
+.block{
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    /* align-items: center; */
+    justify-content: space-evenly;
+}
+h1{
+    width: 90%;
+    text-align: left;
+    margin: 2rem;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-family: var(--rajdhani);
+}
+#fixed{
+    width: 100%;
+    height: 50vh;
+}
+#block1::before{
+    content: '';
+    background: url('images/max-kukurudziak-fzfDRXUya-s-unsplash.jpg') no-repeat center/cover;
+    width: 100%;
+    height: 50vh;
+    position: fixed;
+    z-index: -1;
+    opacity: 50%;
+}
+#block1{
+    align-items: center;
+}
+button{
+    position: relative;
+    /* left: calc(50% - 50px); */
+    padding:1em 1.75em;
+    text-transform: uppercase;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px solid black;
+    outline: none;
+    border:none;
+}
+#block1 button{
+    background-image: linear-gradient(to bottom,rgb(82, 44, 1),black); 
+}
+button:active,button:hover{
+    transform: scale(1.01,1.01);
+    transition: transform 5ms ease-in-out;
+    outline-offset: 1px dotted grey;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 10px;
+    font-family: var(--rajdhani);
+}
+#block2{
+    background-color:var(--grey) ;
+}
+h2{
+    padding: 0rem 3rem;
+    text-transform: capitalize;
+    font-family: var(--rajdhani);
+    font-size: 3rem;
+    color: white;
+}
+p{
+    padding: 0rem 3rem;
+    width: 60%;
+    color: rgb(172, 174, 175);
+    line-height: 50px;
+    font-size: 1.75rem;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+#block2 h2{
+    text-align: right;
+    align-self: flex-end;
+}
+#block2 p{
+    text-align: right;
+    align-self: flex-end;
+}
+#block3{
+    /* content: ''; */
+    width: 100%;
+    background: url("./images/esri-esri-X8f-_TbkYPw-unsplash.jpg") no-repeat fixed
+     center/cover;
+    z-index: -1;
+    color: black;
+}
+#block4{
+    background-color: var(--grey);
+}
+.img{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 200px;
+    height: 200px;
+    margin: 1rem 2rem;
+    box-shadow: 1px 1px 5px solid black;
+    border-radius: 20px;
+}
+#block4 button{
+    background-image: linear-gradient(to bottom,rgb(43, 42, 42), grey);
+    align-self: center;
+}
